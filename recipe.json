@@ -1,0 +1,106 @@
+{
+  "$id": "https://github.com/ItsFoodApp/json-schema/blob/main/recipe.json",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "This document records the details of a recipe",
+  "properties": {
+    "id": {
+      "description": "A unique identifier for a recipe",
+      "type": "number"
+    },
+    "name": {
+      "description": "The name of the recipe",
+      "type": "string"
+    },
+    "description": {
+      "description": "The description of the recipe",
+      "type": "string"
+    },
+    "images": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "description": "A unique identifier for an image",
+            "type": "number"
+          },
+          "title": {
+            "description": "The name of the image",
+            "type": "string"
+          },
+          "url": {
+            "description": "The url of the image",
+            "type": "string"
+          },
+          "type": {
+            "description": "The type of the image",
+            "type": "string",
+            "enum": [
+              "title",
+              "additional"
+            ]
+          }
+        }
+      }
+    },
+    "nutrition": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+        }
+      }
+    },
+    "recipeInstructions": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "object"
+      }
+    },
+    "recipeIngredient": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "name",
+          "amount",
+          "unit"
+        ],
+        "properties": {
+          "id": {
+            "description": "A unique identifier for a ingredient",
+            "type": "number"
+          },
+          "name": {
+            "description": "The name of the ingredient",
+            "type": "string"
+          },
+          "amount": {
+            "description": "The amount of the ingredient",
+            "type": "number"
+          },
+          "unit": {
+            "description": "The unit of the ingredient"
+          }
+        }
+      }
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "images",
+    "description",
+    "nutrition",
+    "recipeIngredient",
+    "recipeInstructions"
+  ],
+  "title": "Record of recipe",
+  "type": "object"
+}
