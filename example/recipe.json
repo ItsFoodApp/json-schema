@@ -1,0 +1,10 @@
+{
+  "$schema": "https://raw.githubusercontent.com/ItsFoodApp/json-schema/main/schema/recipe.json",
+  "id": 0,
+  "name": "",
+  "images": [],
+  "description": "",
+  "nutrition": [],
+  "recipeIngredient": [],
+  "recipeInstructions": []
+}

@@ -1,5 +1,5 @@
 {
-  "$id": "https://raw.githubusercontent.com/ItsFoodApp/json-schema/main/recipe.json",
+  "$id": "https://raw.githubusercontent.com/ItsFoodApp/json-schema/main/schema/recipe.json",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "This document records the details of a recipe",
   "properties": {
