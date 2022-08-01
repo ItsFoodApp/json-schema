@@ -43,11 +43,26 @@
         }
       }
     },
+    "portions": {
+      "type": "number"
+    },
     "nutrition": {
       "type": "array",
       "items": {
         "type": "object",
         "properties": {
+          "id": {
+            "type": "number"
+          },
+          "amount": {
+            "type": "number"
+          },
+          "name": {
+            "type": "string"
+          },
+          "unit": {
+            "type": ["string", "null"]
+          }
         }
       }
     },
@@ -83,10 +98,20 @@
           },
           "amount": {
             "description": "The amount of the ingredient",
-            "type": "number"
+            "type": ["number", "null"]
           },
           "unit": {
-            "description": "The unit of the ingredient"
+            "description": "The unit of the ingredient",
+            "type": ["string", "null"],
+            "enum": [
+              "g",
+              "kg",
+              "stk",
+              "ml",
+              "l",
+              "el",
+              "tl"
+            ]
           }
         }
       }

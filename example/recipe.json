@@ -1,10 +1,136 @@
 {
   "$schema": "https://raw.githubusercontent.com/ItsFoodApp/json-schema/main/schema/recipe.json",
-  "id": 0,
-  "name": "",
+  "id": 1,
+  "name": "Ungarisches Gulasch",
   "images": [],
   "description": "",
-  "nutrition": [],
-  "recipeIngredient": [],
-  "recipeInstructions": []
+  "portions": 4,
+  "nutrition": [
+    {
+      "id": 1,
+      "name": "kcal",
+      "amount": 256,
+      "unit": null
+    },
+    {
+      "id": 2,
+      "name": "Eiweiß",
+      "amount": 14.4,
+      "unit": "g"
+    },
+    {
+      "id": 3,
+      "name": "Fett",
+      "amount": 17.75,
+      "unit": "g"
+    },
+    {
+      "id": 4,
+      "name": "Kohlenhydrate",
+      "amount": 9.64,
+      "unit": "g"
+    }
+  ],
+  "recipeIngredient": [
+    {
+      "id": 1,
+      "name": "Rindergulasch",
+      "amount": 400,
+      "unit": "g"
+    },
+    {
+      "id": 2,
+      "name": "Butterschmalz",
+      "amount": 30,
+      "unit": "g"
+    },
+    {
+      "id": 3,
+      "name": "Zwiebel",
+      "amount": 2,
+      "unit": "stk"
+    },
+    {
+      "id": 4,
+      "name": "Knochblauchzehen",
+      "amount": 3,
+      "unit": "stk"
+    },
+    {
+      "id": 5,
+      "name": "Paprikaschote (Rot)",
+      "amount": 1,
+      "unit": "stk"
+    },
+    {
+      "id": 6,
+      "name": "Paprikaschote (Grün)",
+      "amount": 1,
+      "unit": "stk"
+    },
+    {
+      "id": 7,
+      "name": "Fleischbrühe",
+      "amount": 500,
+      "unit": "ml"
+    },
+    {
+      "id": 8,
+      "name": "Tomatenmark",
+      "amount": 2,
+      "unit": "el"
+    },
+    {
+      "id": 9,
+      "name": "Chilischote",
+      "amount": 1,
+      "unit": "stk"
+    },
+    {
+      "id": 10,
+      "name": "Lorbeerblatt",
+      "amount": 1,
+      "unit": "stk"
+    },
+    {
+      "id": 11,
+      "name": "Kümmel",
+      "amount": 1,
+      "unit": "tl"
+    },
+    {
+      "id": 12,
+      "name": "abgeriebene Zitronenschale",
+      "amount": null,
+      "unit": null
+    },
+    {
+      "id": 13,
+      "name": "Paprikapulver",
+      "amount": null,
+      "unit": null
+    },
+    {
+      "id": 14,
+      "name": "Pfeffer",
+      "amount": null,
+      "unit": null
+    },
+    {
+      "id": 15,
+      "name": "Salz",
+      "amount": null,
+      "unit": null
+    }
+  ],
+  "recipeInstructions": [
+    {
+      "step": 1,
+      "description": "Die Zwiebeln und den Knoblauch schälen und in Scheiben schneiden. In einem großen Schmortopf das Schmalz zerlassen. Zwiebeln und Knoblauch glasig dünsten. Das Fleisch würfeln, zugeben und anbraten. Dann Tomatenmark untermischen. Lorbeerblatt, Paprikapulver, etwas Zitronenschale, Kümmel, Salz und Pfeffer zugeben und mit Fleischbrühe auffüllen. Rund 40 Minuten kochen lassen."
+    },
+    {
+      "step": 2,
+      "description": "Die Paprikaschoten in etwa 2 cm große Würfel, die Chilischote in Streifen schneiden und alles zum Fleisch geben. Noch ca. 10 Minuten köcheln lassen. Das Gulasch nochmals mit Pfeffer, Salz und Paprikapulver abschmecken."
+    }
+  ]
 }
